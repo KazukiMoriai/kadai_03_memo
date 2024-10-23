@@ -34,10 +34,7 @@
     </div>
 
     <div id="title">
-      <form action="test.html" name="form1" method="post">
         <input type="text" id="key" name = "key">
-        <input type="submit">
-      </form>
     </div>
 
     <div id="text">
@@ -46,20 +43,10 @@
     <div id="buttons">
       <button id="button">保存</button>
       <button id="delete">削除</button>
-      <button id="change">変更</button>
     </div>
     <table id="sample"></table>
 
-    <?php    
-    
-    
-    
-    
-    
-    
-    
-    
-    ?>
+
    <script>
       // 入力内容をlocal strageへ転記、表へ転記
       $("#button").on("click",function(){
@@ -78,23 +65,6 @@
             $(this).closest("tr").remove();
           })
       })
-
-      //選択したデータのみ変更
-      $("#change").on("click",function(){
-        $(".check:checked").each(function(){
-          $(this).closest("tb").val("変更後");
-        }) 
-      })
-        
-    
-      // if(document.getElementById("check").checked){
-      //   $("#delete").on("click",function(){
-      //   $("#sample").append("aaaaaa");;
-      //   })
-      // }
-    
-
-
 
     </script>
   </body>
