@@ -34,7 +34,10 @@
     </div>
 
     <div id="title">
-      <input type="text" id="key">
+      <form action="test.html" name="form1" method="post">
+        <input type="text" id="key" name = "key">
+        <input type="submit">
+      </form>
     </div>
 
     <div id="text">
@@ -47,8 +50,17 @@
     </div>
     <table id="sample"></table>
 
-
-    <script>
+    <?php    
+    
+    
+    
+    
+    
+    
+    
+    
+    ?>
+   <script>
       // 入力内容をlocal strageへ転記、表へ転記
       $("#button").on("click",function(){
           const key = $("#key").val();          
